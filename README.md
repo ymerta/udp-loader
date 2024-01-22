@@ -1,15 +1,15 @@
-1.Introduction and Problem Statement
+# 1.Introduction and Problem Statement
 In this assignment, the focus is on understanding the functionality of a UDP load balancer. A UDP load balancer operates at the transport layer in the OSI model, utilizing the User Datagram Protocol (UDP). This assignment explores the intermediary role of UDP in communication between an application program and the Internet Protocol. The fundamental concept demonstrated here is how a UDP load balancer efficiently distributes incoming requests to various local servers. Initially, the assignment involves examining sample Internet ping servers and a corresponding client implemented in Python.	
 
 
-2.Assignment Objectives 
+# 2.Assignment Objectives 
 The features that the project should have are as follows: 
 • Implement the udpLoadBalancer class to facilitate the distribution of client requests among the three servers in a cyclic order.
 • Guarantee continuity in the distribution sequence, so that if the client requests again, the distribution resumes from the point where it left off.
 • Ensure that the ping distribution adheres to a specific sequence, where the first incoming ping is directed to Server1, followed by Server2, Server3, and so on in a cyclical pattern.
 
 
-3.Assignment Design, Methods and Procedures
+# 3.Assignment Design, Methods and Procedures
 In this assignment, communication was provided through the terminal. In the terminal, questions and options appear in front of the client, and the answers given by the server are displayed.
 udpLoadBalancer.py:The necessary libraries for the code are imported in this part, which marks the beginning of the code. It checks if the script is executed with the correct number of command line arguments. A UDP socket is created and assigned to the specified port on the local machine. In the final part, server addresses are stored in an array as IP and port numbers.
 The processes are executed in a loop within the while loop. The operations can be explained in the following sequence:
