@@ -4,10 +4,10 @@ In this assignment, the focus is on understanding the functionality of a UDP loa
 
 # 2.Assignment Objectives 
 The features that the project should have are as follows: 
-• Implement the udpLoadBalancer class to facilitate the distribution of client requests among the three servers in a cyclic order.
-• Guarantee continuity in the distribution sequence, so that if the client requests again, the distribution resumes from the point where it left off.
-• Ensure that the ping distribution adheres to a specific sequence, where the first incoming ping is directed to Server1, followed by Server2, Server3, and so on in a cyclical pattern.
-
+Implement the udpLoadBalancer class to facilitate the distribution of client requests among the three servers in a cyclic order.
+Guarantee continuity in the distribution sequence, so that if the client requests again, the distribution resumes from the point where it left off.
+Ensure that the ping distribution adheres to a specific sequence, where the first incoming ping is directed to Server1, followed by Server2, Server3, and so on in a cyclical pattern.
+///////////////
 
 # 3.Assignment Design, Methods and Procedures
 In this assignment, communication was provided through the terminal. In the terminal, questions and options appear in front of the client, and the answers given by the server are displayed.
