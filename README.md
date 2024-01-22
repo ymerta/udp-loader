@@ -12,19 +12,19 @@ Ensure that the ping distribution adheres to a specific sequence, where the firs
 
 
 # 3.Assignment Design, Methods and Procedures
-In this assignment, communication was provided through the terminal. In the terminal, questions and options appear in front of the client, and the answers given by the server are displayed.
-udpLoadBalancer.py:The necessary libraries for the code are imported in this part, which marks the beginning of the code. It checks if the script is executed with the correct number of command line arguments. A UDP socket is created and assigned to the specified port on the local machine. In the final part, server addresses are stored in an array as IP and port numbers.
-The processes are executed in a loop within the while loop. The operations can be explained in the following sequence:
-•	It creates a new socket (serverSocket) and sends the received request to the current server defined by the 'current_server_index.'
-•	It waits for a response from the server. If a response is received, it is stored in the variable 'response.'
-•	It prints the response received from the server along with additional information, such as the origin of the message from the load balancer, the port of the server that processed the request, and the timestamp.
-•	The index is incremented to point to the next server in a round-robin fashion. This ensures that subsequent requests are distributed among the three servers in order.
-•	The script continues to run indefinitely, handling incoming requests, sending them to servers, receiving responses, and printing the relevant information.
+In this assignment, communication was provided through the terminal. In the terminal, questions and options appear in front of the client, and the answers given by the server are displayed. <br />
+udpLoadBalancer.py:The necessary libraries for the code are imported in this part, which marks the beginning of the code. It checks if the script is executed with the correct number of command line arguments. A UDP socket is created and assigned to the specified port on the local machine. In the final part, server addresses are stored in an array as IP and port numbers. <br />
+The processes are executed in a loop within the while loop. The operations can be explained in the following sequence: <br />
+•	It creates a new socket (serverSocket) and sends the received request to the current server defined by the 'current_server_index.' <br />
+•	It waits for a response from the server. If a response is received, it is stored in the variable 'response.' <br />
+•	It prints the response received from the server along with additional information, such as the origin of the message from the load balancer, the port of the server that processed the request, and the timestamp. <br />
+•	The index is incremented to point to the next server in a round-robin fashion. This ensures that subsequent requests are distributed among the three servers in order. <br />
+•	The script continues to run indefinitely, handling incoming requests, sending them to servers, receiving responses, and printing the relevant information. <br />
 
 <img width="480" alt="image" src="https://github.com/ymerta/udp-loader/assets/107405633/64740fd1-03b6-46fa-904f-57e7c60b3560">
-(1)
+(1) <br />
 We start our servers in separate terminals with the command 'python server.py' and keep them ready to receive incoming messages. 
-
+ 
 <img width="481" alt="image" src="https://github.com/ymerta/udp-loader/assets/107405633/000270d1-e8aa-47b0-9dd4-7df9cd3e9a64">
 (2)
 Then, we run our UDP load balancer in the terminal with the command 'python udpLoadBalancer.py 8888'.
