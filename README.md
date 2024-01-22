@@ -21,26 +21,26 @@ The processes are executed in a loop within the while loop. The operations can b
 •	The index is incremented to point to the next server in a round-robin fashion. This ensures that subsequent requests are distributed among the three servers in order. <br />
 •	The script continues to run indefinitely, handling incoming requests, sending them to servers, receiving responses, and printing the relevant information. <br />
 
-<img width="480" alt="image" src="https://github.com/ymerta/udp-loader/assets/107405633/64740fd1-03b6-46fa-904f-57e7c60b3560">
+<img width="480" alt="image" src="https://github.com/ymerta/udp-loader/assets/107405633/64740fd1-03b6-46fa-904f-57e7c60b3560"> <br />
 (1) <br />
-We start our servers in separate terminals with the command 'python server.py' and keep them ready to receive incoming messages. 
+We start our servers in separate terminals with the command 'python server.py' and keep them ready to receive incoming messages.  <br />
  
-<img width="481" alt="image" src="https://github.com/ymerta/udp-loader/assets/107405633/000270d1-e8aa-47b0-9dd4-7df9cd3e9a64">
-(2)
-Then, we run our UDP load balancer in the terminal with the command 'python udpLoadBalancer.py 8888'.
+<img width="481" alt="image" src="https://github.com/ymerta/udp-loader/assets/107405633/000270d1-e8aa-47b0-9dd4-7df9cd3e9a64"> <br />
+(2) <br />
+Then, we run our UDP load balancer in the terminal with the command 'python udpLoadBalancer.py 8888'. <br />
 
-<img width="478" alt="image" src="https://github.com/ymerta/udp-loader/assets/107405633/961d8cbf-293b-4345-8b16-7e519636ddb9">
-(3)
-Finally, we activate our client side by running the command 'python UDPPingerClient.py localhost 8888', initiating the transferring process.
+<img width="478" alt="image" src="https://github.com/ymerta/udp-loader/assets/107405633/961d8cbf-293b-4345-8b16-7e519636ddb9"> <br />
+(3) <br />
+Finally, we activate our client side by running the command 'python UDPPingerClient.py localhost 8888', initiating the transferring process. <br />
 
-<img width="478" alt="image" src="https://github.com/ymerta/udp-loader/assets/107405633/c37fe3a1-dabf-4ebb-a4eb-353888f3d073">
-(4)
+<img width="478" alt="image" src="https://github.com/ymerta/udp-loader/assets/107405633/c37fe3a1-dabf-4ebb-a4eb-353888f3d073"> <br />
+(4) <br />
 
-After activating the client, we can observe the incoming pings from the load balancer in the server terminals.
-<img width="477" alt="image" src="https://github.com/ymerta/udp-loader/assets/107405633/b535081b-7301-4574-aa8e-434ec3e8d84e">
-(5)
+After activating the client, we can observe the incoming pings from the load balancer in the server terminals. <br />
+<img width="477" alt="image" src="https://github.com/ymerta/udp-loader/assets/107405633/b535081b-7301-4574-aa8e-434ec3e8d84e"> <br />
+(5) <br />
 
-We activate the client for the second time with the command 'python UDPPingerClient.py localhost 8888'.
-<img width="478" alt="image" src="https://github.com/ymerta/udp-loader/assets/107405633/14b448b7-2224-4e8b-a4c9-a1d45d470687">
-(6)
-After activating the client for the second time, the terminals of the servers look like the (6).
+We activate the client for the second time with the command 'python UDPPingerClient.py localhost 8888'. <br />
+<img width="478" alt="image" src="https://github.com/ymerta/udp-loader/assets/107405633/14b448b7-2224-4e8b-a4c9-a1d45d470687"> <br />
+(6) <br />
+After activating the client for the second time, the terminals of the servers look like the (6). <br />
